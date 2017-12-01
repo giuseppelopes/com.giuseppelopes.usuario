@@ -1,0 +1,22 @@
+server:
+  port: 8085
+
+spring:
+  datasource:
+    url: jdbc:mysql://mysql.giuseppelopes.com:3306/giuseppelopes15
+    username: giuseppelopes15
+    password: "giu40302010"
+    initialize: false
+  jpa:
+    properties:
+      hibernate:
+        show_sql: false
+        use_sql_comments: false
+        format_sql: false
+    hibernate:
+      ddl-auto: create
+
+
+flyway:
+  enabled: true
+  baseline-on-migrate: true
