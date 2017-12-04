@@ -23,13 +23,14 @@ public class UsuarioController {
 	@PostMapping(path="/add")
 	@ResponseStatus(HttpStatus.CREATED)
 	public @ResponseBody String addNewUser (@RequestParam String name
-			, @RequestParam String email, @RequestParam String senha) {
+			, @RequestParam String email, @RequestParam String senha, @RequestParam String status) {
 		// @ResponseBody means the returned String is the response, not a view name
 		// @RequestParam means it is a parameter from the GET or POST request
 		Usuario usuario = new Usuario();
 		usuario.setNome(name);
 		usuario.setEmail(email);
 		usuario.setSenha(senha);
+		usuario.setStatus(Integer.getInteger(status));
 		usuarioRepositorio.save(usuario);
 		return "Saved";
 	}

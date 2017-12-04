@@ -14,6 +14,8 @@ public class Usuario {
     private String nome;
     private String email;
     private String senha;
+    private int status;
+    
 	public Integer getId() {
 		return id;
 	}
@@ -38,4 +40,12 @@ public class Usuario {
 	public void setSenha(String senha) {
 		this.senha = senha;
 	}
+	public int getStatus() {
+		return status;
+	}
+	public void setStatus(int status) {
+		this.status = status;
+	}
+	
+	
 }
