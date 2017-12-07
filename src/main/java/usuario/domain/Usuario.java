@@ -1,4 +1,4 @@
-package usuario.entity;
+package usuario.domain;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;

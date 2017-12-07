@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import usuario.entity.Usuario;
+import usuario.domain.Usuario;
 import usuario.repository.UsuarioRepository;
 
 @RestController
